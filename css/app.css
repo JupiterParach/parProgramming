@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body, html {
+  min-height: 100%;
+}
+body {
+  background: #200122;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url('../img/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+select {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 24px;
+  min-width: 100px;
+  padding-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+form.central-content > * {
+  margin-right: 10px;
+}
+form.central-content > .last-child {
+  margin-right: 0 !important;
+}
+.placeholder {
+  color: #ccc;
+}
+.central-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(31, 43, 56, 0.5);
+  min-height: 10px;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 10px;
+}
+table.central-content,
+.central-content th,
+.central-content td {
+  border: 0;
+  padding: 15px 25px 15px 25px;
+}
+.central-content:first-of-type {
+  margin-top: 45px;
+}
+.central-content th {
+  background: #95a5a6;
+}
+.central-content td {
+  background: #ecf0f1;
+}
+.nav {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(31, 43, 56, 0.5);
+  min-height: 10px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.button {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0 5px;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 24px;
+  font-size: 24px;
+  color: white;
+  transition: 0.025s;
+  background: #3498db;
+  border-color: #2980b9;
+}
+button.button {
+  margin-right: 0px;
+}
+.button:active {
+  background: #34495e;
+  border-color: #2c3e50;
+}
+.input-field {
+  margin: 0 5px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+}
+.input-field[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.input-field[type="number"]::-webkit-inner-spin-button,
+.input-field[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-field[name="username"] {
+  margin-left: 0;
+}
